@@ -1,0 +1,7 @@
+baseURL = 'https://jmladm.github.io/Site/'
+languageCode = 'en-us'
+theme = "ananke"
+
+[params]
+site_logo = "img/logo.svg"
+
