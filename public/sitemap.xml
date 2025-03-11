@@ -4,9 +4,9 @@
   <url>
     <loc>http://localhost:61819/categories/</loc>
   </url><url>
-    <loc>http://localhost:61819/contact/</loc>
-  </url><url>
     <loc>http://localhost:61819/</loc>
+  </url><url>
+    <loc>http://localhost:61819/dsgvo/</loc>
   </url><url>
     <loc>http://localhost:61819/impressum/</loc>
   </url><url>
