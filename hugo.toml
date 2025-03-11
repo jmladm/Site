@@ -5,6 +5,28 @@ theme = "ananke"
 
 defaultContentLanguage = "en"
 sectionPagesMenu = "main"
-enableRobotsTXT = true
+enableRobotsTXT = false
+
+[services.googleAnalytics]
+    id = ''
+
+
+
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+[params]
+    mainSections = ["post"]
+    text_color = ""
+    
+    favicon = ""
+    site_logo = ""
+    background_color_class = "bg-black"
+    featured_image_class = "cover bg-top"
+    cover_dimming_class = "bg-black-60"
+    recent_posts_number = 3
 
 
