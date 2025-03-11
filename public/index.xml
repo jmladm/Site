@@ -2,11 +2,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Dein CSC in Wiesbaden on Haaallo</title>
-    <link>http://localhost:55901/Site/</link>
+    <link>http://localhost:1313/</link>
     <description>Recent content in Dein CSC in Wiesbaden on Haaallo</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate></lastBuildDate>
-    <atom:link href="http://localhost:55901/Site/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

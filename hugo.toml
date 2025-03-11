@@ -1,5 +1,5 @@
 title = "Haaallo"
-baseURL = 'https://jmladm.github.io/Site/'
+baseURL = "https://insane-csc-site.netlify.app/"
 languageCode = 'en-us'
 theme = "ananke"
 
