@@ -1,4 +1,4 @@
-title = "Anmedlung"
+title = "H$T"
 baseURL = "https://insane-csc-site.netlify.app/"
 languageCode = 'en-us'
 theme = "ananke"
@@ -19,6 +19,7 @@ enableRobotsTXT = false
       unsafe = true
 
 [params]
+    custom_css = ["custom.css"]
     mainSections = ["post"]
     text_color = ""
     

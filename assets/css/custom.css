@@ -1,0 +1,6 @@
+.hero-background {
+    background-attachment: fixed;  /* Dies sorgt für den Parallax-Effekt */
+    background-size: cover;        /* Sorgt dafür, dass das Bild den gesamten Bereich abdeckt */
+    background-position: center center; /* Zentriert das Bild */
+  }
+  
