@@ -1,3 +1,2 @@
 User-agent: *
-Allow: /
-Sitemap: https://insane-csc-site.netlify.app/sitemap.xml
+Disallow: /

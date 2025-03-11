@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Dein CSC in Wiesbaden on H&amp;T</title>
-    <link>https://insane-csc-site.netlify.app/</link>
+    <link>http://localhost:58323/</link>
     <description>Recent content in Dein CSC in Wiesbaden on H&amp;T</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 11 Mar 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://insane-csc-site.netlify.app/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:58323/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Coole Seite</title>
-      <link>https://insane-csc-site.netlify.app/info/</link>
+      <link>http://localhost:58323/info/</link>
       <pubDate>Tue, 11 Mar 2025 00:00:00 +0000</pubDate>
-      <guid>https://insane-csc-site.netlify.app/info/</guid>
+      <guid>http://localhost:58323/info/</guid>
       <description>&lt;h1 id=&#34;willkommen-auf-meiner-coolen-seite&#34;&gt;Willkommen auf meiner coolen Seite!&lt;/h1&gt;&#xA;&lt;p&gt;Hier ist der Inhalt meiner neuen Hugo-Seite. 🎉&lt;/p&gt;&#xA;&lt;p&gt;Du kannst &lt;strong&gt;Markdown&lt;/strong&gt; nutzen, um Inhalte schön zu gestalten:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Punkt 1&lt;/li&gt;&#xA;&lt;li&gt;Punkt 2&lt;/li&gt;&#xA;&lt;li&gt;Punkt 3&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;weiterer-abschnitt&#34;&gt;Weiterer Abschnitt&lt;/h2&gt;&#xA;&lt;p&gt;Hier geht&amp;rsquo;s weiter mit mehr Text.&lt;/p&gt;</description>
     </item>
   </channel>
