@@ -1,0 +1,44 @@
+<footer class="{{ .Site.Params.background_color_class | default "bg-black" }} bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex justify-between">
+    <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="{{ .Site.Home.Permalink }}">
+      &copy; {{ with .Site.Copyright | default .Site.Title }} {{ . | safeHTML }} {{ now.Format "2006"}} {{ end }}
+    </a>
+    <div>{{ partialCached "social/follow.html" . }}</div>
+  </div>
+</footer>
+
+<!-- Cookie Banner -->
+<div id="cookie-banner" style="display:none; position: fixed; bottom: 20px; left: 20px; right: 20px; background: rgba(0,0,0,0.9); color: #fff; padding: 20px; border-radius: 8px; text-align: center; z-index: 1000;">
+  <p>
+    Wir verwenden Cookies, um unsere Website und unseren Service zu optimieren. 
+    <a href="/DSGVO/" style="color: rgb(0, 255, 42);">Mehr erfahren</a>
+  </p>
+  
+  <div style="margin-top: 10px;">
+    <button id="accept-all" style="padding: 10px 20px; background-color: rgb(0, 255, 42); color: #fff; border: none; border-radius: 4px; cursor: pointer;">Alle akzeptieren</button>
+    <button id="accept-essential" style="padding: 10px 20px; background-color: #555; color: #fff; border: none; border-radius: 4px; cursor: pointer;">Nur essentielle Cookies</button>
+  </div>
+</div>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    var banner = document.getElementById("cookie-banner");
+    var acceptAllButton = document.getElementById("accept-all");
+    var acceptEssentialButton = document.getElementById("accept-essential");
+
+    if (!localStorage.getItem("cookieConsent")) {
+      banner.style.display = "block";
+    }
+
+    acceptAllButton.addEventListener("click", function() {
+      localStorage.setItem("cookieConsent", "all");
+      banner.style.display = "none";
+      // Hier kannst du z. B. Google Analytics oder andere Cookies starten
+    });
+
+    acceptEssentialButton.addEventListener("click", function() {
+      localStorage.setItem("cookieConsent", "essential");
+      banner.style.display = "none";
+    });
+  });
+</script>

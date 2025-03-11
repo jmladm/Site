@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en-us">
-  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=61819&amp;path=livereload" data-no-instant defer></script>
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=63490&amp;path=livereload" data-no-instant defer></script>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     
@@ -36,10 +36,10 @@
     
 
     
-      <link rel="canonical" href="http://localhost:61819/">
+      <link rel="canonical" href="http://localhost:63490/">
     
 
-    <meta property="og:url" content="http://localhost:61819/">
+    <meta property="og:url" content="http://localhost:63490/">
   <meta property="og:site_name" content="H&T">
   <meta property="og:title" content="Dein CSC in Wiesbaden">
   <meta property="og:description" content="Wir sind bald für dich da!">
@@ -48,7 +48,7 @@
 
   <meta itemprop="name" content="Dein CSC in Wiesbaden">
   <meta itemprop="description" content="Wir sind bald für dich da!">
-  <meta itemprop="wordCount" content="4">
+  <meta itemprop="wordCount" content="5">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Dein CSC in Wiesbaden">
   <meta name="twitter:description" content="Wir sind bald für dich da!">
@@ -60,7 +60,7 @@
 
   
   
-  <header class="cover bg-top" style="background-image: url('http://localhost:61819/images/Weed.jpg');">
+  <header class="cover bg-top" style="background-image: url('http://localhost:63490/images/Weed.jpg');">
     
     <div class="bg-black-60">
       <nav class="pv3 ph3 ph4-ns" role="navigation">
@@ -115,7 +115,7 @@
   <article class="cf ph3 ph5-l pv3 pv4-l f4 tc-l center measure-wide lh-copy mid-gray">
     <div class="vh-100 flex items-center justify-center">
   <div class="ba bw4 br3 bg-black white tc f1 fw7 w-100 mw9 pa5">
-    Melde dich schnell an!
+    hier kommt das Anmeldeformular hin
   </div>
 </div>
 
@@ -134,13 +134,49 @@
     </main>
     <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
   <div class="flex justify-between">
-  <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="http://localhost:61819/" >
-    &copy;  H&T 2025 
-  </a>
+    <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="http://localhost:63490/">
+      &copy;  H&T 2025 
+    </a>
     <div><div class="ananke-socials"></div>
 </div>
   </div>
 </footer>
+
+
+<div id="cookie-banner" style="display:none; position: fixed; bottom: 20px; left: 20px; right: 20px; background: rgba(0,0,0,0.9); color: #fff; padding: 20px; border-radius: 8px; text-align: center; z-index: 1000;">
+  <p>
+    Wir verwenden Cookies, um unsere Website und unseren Service zu optimieren. 
+    <a href="/DSGVO/" style="color: rgb(0, 255, 42);">Mehr erfahren</a>
+  </p>
+  
+  <div style="margin-top: 10px;">
+    <button id="accept-all" style="padding: 10px 20px; background-color: rgb(0, 255, 42); color: #fff; border: none; border-radius: 4px; cursor: pointer;">Alle akzeptieren</button>
+    <button id="accept-essential" style="padding: 10px 20px; background-color: #555; color: #fff; border: none; border-radius: 4px; cursor: pointer;">Nur essentielle Cookies</button>
+  </div>
+</div>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    var banner = document.getElementById("cookie-banner");
+    var acceptAllButton = document.getElementById("accept-all");
+    var acceptEssentialButton = document.getElementById("accept-essential");
+
+    if (!localStorage.getItem("cookieConsent")) {
+      banner.style.display = "block";
+    }
+
+    acceptAllButton.addEventListener("click", function() {
+      localStorage.setItem("cookieConsent", "all");
+      banner.style.display = "none";
+      
+    });
+
+    acceptEssentialButton.addEventListener("click", function() {
+      localStorage.setItem("cookieConsent", "essential");
+      banner.style.display = "none";
+    });
+  });
+</script>
 
   </body>
 </html>
