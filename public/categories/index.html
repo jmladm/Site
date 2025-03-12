@@ -63,9 +63,9 @@
 
   
   
+
   
-  
-  <header class="cover bg-top" style="background-image: url('http://localhost:1313/images/Weed.jpg');">
+  <header class="cover bg-top parallax-header" style="background-image: url('http://localhost:1313/images/Weed.jpg');">
     
     <div class="bg-black-60">
       <nav class="pv3 ph3 ph4-ns" role="navigation">
@@ -116,7 +116,19 @@
       </div>
     </div>
   </header>
+
   
+  <script>
+    document.addEventListener("scroll", function() {
+      const parallaxHeader = document.querySelector(".parallax-header");
+      if (parallaxHeader) {
+        let scrollPosition = window.pageYOffset;
+        
+        parallaxHeader.style.backgroundPosition = "center " + (scrollPosition * 0.5) + "px";
+      }
+    });
+  </script>
+
 
 
     <main class="pb7" role="main">

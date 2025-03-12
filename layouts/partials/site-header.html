@@ -5,9 +5,9 @@
 {{ if $featured_image }}
   {{/* Trimming the slash and adding absURL make sure the image works no matter where our site lives */}}
   {{ $featured_image_class := site.Params.featured_image_class | default "cover bg-top" }}
-  
-  <!-- Das Header-Element bekommt die "cover" Klasse für den Parallax-Effekt -->
-  <header class="{{ $featured_image_class }}" style="background-image: url('{{ $featured_image }}');">
+
+  <!-- Das Header-Element bekommt die "parallax-header" Klasse -->
+  <header class="{{ $featured_image_class }} parallax-header" style="background-image: url('{{ $featured_image }}'); background-position: center center; background-size: cover;">
     {{ $cover_dimming_class := site.Params.cover_dimming_class | default "bg-black-60" }}
     <div class="{{ $cover_dimming_class }}">
       {{ partial "site-navigation.html" . }}
@@ -23,7 +23,21 @@
       </div>
     </div>
   </header>
-  
+
+  <!-- Hier das optimierte Parallax-Script -->
+  <script>
+    document.addEventListener("scroll", function() {
+      const parallaxHeader = document.querySelector(".parallax-header");
+      if (parallaxHeader) {
+        const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        const speed = 0.3; // Anpassen für mehr/weniger Effekt
+        const yPos = -(scrollTop * speed);
+
+        parallaxHeader.style.backgroundPosition = `center ${yPos}px`;
+      }
+    });
+  </script>
+
 {{ else }}
   <header>
     <div class="pb3-m pb6-l {{ .Site.Params.background_color_class | default "bg-black" }}">
