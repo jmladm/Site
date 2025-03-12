@@ -22,7 +22,7 @@ enableRobotsTXT = false
     custom_css = ["custom.css"]
     mainSections = ["post"]
     text_color = ""
-    
+
     favicon = ""
     site_logo = ""
     background_color_class = "bg-black"
