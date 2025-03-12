@@ -131,7 +131,7 @@
       const parallaxHeader = document.querySelector(".parallax-header");
       if (parallaxHeader) {
         const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-        const speed = 0.5; 
+        const speed = 0.2; 
         const yPos = -(scrollTop * speed);
 
         parallaxHeader.style.backgroundPosition = `center ${yPos}px`;
