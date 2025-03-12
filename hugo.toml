@@ -45,3 +45,4 @@ networks = [
 [params.ananke.social.instagram]
 username = "dein_instagram_username"  # Dein Instagram-Benutzername hier eintragen
 profilelink = "https://www.instagram.com/dein_instagram_username"  # Instagram-Profillink
+
