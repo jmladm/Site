@@ -30,7 +30,7 @@
       const parallaxHeader = document.querySelector(".parallax-header");
       if (parallaxHeader) {
         const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-        const speed = 0.3; // Anpassen für mehr/weniger Effekt
+        const speed = 0.5; // Anpassen für mehr/weniger Effekt
         const yPos = -(scrollTop * speed);
 
         parallaxHeader.style.backgroundPosition = `center ${yPos}px`;
