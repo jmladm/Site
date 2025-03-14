@@ -1,9 +1,73 @@
-.cover {
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
+/* Hamburger Icon Animation */
+#menu-toggle {
+  transition: all 0.3s ease;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 4;
 }
 
-.parallax-header {
-  background-attachment: scroll; /* wichtig, weil JS übernimmt */
+.hamburger-line-top,
+.hamburger-line-bottom {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  transform-origin: center;
+}
+
+/* Hover-Effekt wenn Menu geschlossen */
+#menu-toggle:not(.active):hover .hamburger-line-top {
+  transform: translateY(-2px);
+}
+
+#menu-toggle:not(.active):hover .hamburger-line-bottom {
+  transform: translateY(2px);
+}
+
+/* Kreuz-Animation wenn Menu offen */
+#menu-toggle.active .hamburger-line-top {
+  transform: rotate(45deg) translate(2px, 2px);
+}
+
+#menu-toggle.active .hamburger-line-bottom {
+  transform: rotate(-45deg) translate(4px, -4px);
+}
+
+/* Rückanimation bei Hover im geöffneten Menu */
+#menu-toggle.active:hover .hamburger-line-top {
+  transform: rotate(0) translateY(-4px);
+}
+
+#menu-toggle.active:hover .hamburger-line-bottom {
+  transform: rotate(0) translateY(4px);
+}
+
+/* Bestehende Styles */
+.fullscreen-dropdown {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.95);
+  z-index: 2;
+  overflow-y: auto;
+  opacity: 0;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  transform: translateY(-20px);
+}
+
+.fullscreen-dropdown.active {
+  display: block;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.fullscreen-dropdown-content {
+  padding: 4rem 2rem;
+  max-width: 800px;
+  margin: 0 auto;
 }

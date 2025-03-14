@@ -57,45 +57,74 @@
   </head><body class="ma0 avenir bg-near-white development">
 
     
-<link rel="stylesheet" href="/custom.css">
-
-
 
   
   
-
-  
-  <header class="cover bg-top parallax-header" style="background-image: url('http://localhost:1313/images/Weed.jpg'); background-position: center center; background-size: cover;">
+  <header class="cover bg-top" style="background-image: url('http://localhost:1313/images/Weed.jpg');">
     
     <div class="bg-black-60">
-      <nav class="pv3 ph3 ph4-ns" role="navigation">
-  <div class="flex-l justify-between items-center center">
-    <a href="/" class="f3 fw2 hover-white no-underline white-90 dib">
-      
-        H$T
-      
-    </a>
-    <div class="flex-l items-center">
+      <nav class="pv3 ph3 ph4-ns bg-black-90" role="navigation">
+  <div class="flex justify-between items-center center">
+    <div class="flex items-center">
       
 
       
+        <a href="/" class="f3 fw2 hover-green no-underline white-90 dib mr3">
+          
+            H$T
+          
+        </a>
         <ul class="pl0 mr3">
           
-          <li class="list f5 f4-ns fw4 dib pr3">
-            <a class="hover-white no-underline white-90" href="/dsgvo/" title="DSGVO page">
-              DSGVO
-            </a>
-          </li>
+            <li class="list f5 f5-ns fw4 dib pr3">
+              <a class="hover-green no-underline white-90" href="/dsgvo/" title="DSGVO page">
+                DSGVO
+              </a>
+            </li>
           
-          <li class="list f5 f4-ns fw4 dib pr3">
-            <a class="hover-white no-underline white-90" href="/impressum/" title="impressum page">
-              impressum
-            </a>
-          </li>
+            <li class="list f5 f5-ns fw4 dib pr3">
+              <a class="hover-green no-underline white-90" href="/impressum/" title="impressum page">
+                impressum
+              </a>
+            </li>
           
         </ul>
       
-      <div class="ananke-socials"><a href="https://www.instagram.com/dein_instagram_username" target="_blank" rel="noopener"
+    </div>
+
+    
+    <button id="menu-toggle" class="ml3 flex items-center pa2 bg-transparent bn white-90 hover-green pointer z-999">
+      <svg class="w1 h1" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24">
+        <path class="hamburger-line-top" stroke-linecap="round" d="M4 6h16" />
+        <path class="hamburger-line-bottom" stroke-linecap="round" d="M4 18h16" />
+      </svg>
+    </button>
+
+    
+    <div id="fullscreen-dropdown" class="fullscreen-dropdown">
+      <div class="fullscreen-dropdown-content">
+        <button class="close-btn">×</button>
+        <div class="dropdown-content-inner">
+          
+            <ul class="pl0 list">
+              
+                <li class="pv3">
+                  <a class="hover-white no-underline white-90" href="/dsgvo/">
+                    DSGVO
+                  </a>
+                  
+                </li>
+              
+                <li class="pv3">
+                  <a class="hover-white no-underline white-90" href="/impressum/">
+                    impressum
+                  </a>
+                  
+                </li>
+              
+            </ul>
+          
+          <div class="ananke-socials"><a href="https://www.instagram.com/dein_instagram_username" target="_blank" rel="noopener"
         class="ananke-social-link link-transition instagram link dib z-999 pt3 pt0-l mr1"
         title="follow on Instagram - Opens in a new window"
         aria-label="follow on Instagram - Opens in a new window">
@@ -104,9 +133,40 @@
             
           </span></a></div>
 
+        </div>
+      </div>
     </div>
   </div>
 </nav>
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const toggleButton = document.getElementById('menu-toggle');
+    const dropdown = document.getElementById('fullscreen-dropdown');
+    const closeBtn = dropdown.querySelector('.close-btn');
+
+    
+    toggleButton.addEventListener('click', () => {
+      toggleButton.classList.toggle('active');
+      dropdown.classList.toggle('active');
+    });
+
+    
+    const closeMenu = () => {
+      toggleButton.classList.remove('active');
+      dropdown.classList.remove('active');
+    };
+
+    closeBtn.addEventListener('click', closeMenu);
+    
+    document.addEventListener('click', (e) => {
+      if (!dropdown.contains(e.target) && !toggleButton.contains(e.target)) {
+        closeMenu();
+      }
+    });
+
+    dropdown.addEventListener('click', (e) => e.stopPropagation());
+  });
+</script>
 
       <div class="tc-l pv4 pv6-l ph3 ph4-ns">
         <h1 class="f2 f-subheadline-l fw2 white-90 mb0 lh-title">
@@ -116,22 +176,6 @@
       </div>
     </div>
   </header>
-
-  
-  <script>
-    document.addEventListener("scroll", function() {
-      const parallaxHeader = document.querySelector(".parallax-header");
-      if (parallaxHeader) {
-        const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-        const speed = 0.3; 
-        const yPos = -(scrollTop * speed);
-
-        parallaxHeader.style.backgroundPosition = `center ${yPos}px`;
-      }
-    });
-  </script>
-
-
 
     <main class="pb7" role="main">
       
