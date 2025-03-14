@@ -3,7 +3,7 @@
     <div class="flex items-center">
       {{ partial "i18nlist.html" . }}
       {{ if .Site.Menus.main }}
-        <a href="{{ .Site.Home.RelPermalink }}" class="f3 fw2 hover-green no-underline white-90 dib {{ cond (eq $.Site.Language.LanguageDirection "rtl") "ml3" "mr4" }}">
+        <a href="{{ .Site.Home.RelPermalink }}" class="f3 fw2 hover-white  no-underline white-90 dib {{ cond (eq $.Site.Language.LanguageDirection "rtl") "ml3" "mr4" }}">
           {{ with .Site.Params.site_logo }}
             <img src="{{ relURL . }}" class="w100 mw5-ns" alt="{{ $.Site.Title }}" />
           {{ else }}
@@ -13,7 +13,7 @@
         <ul class="{{ cond (eq $.Site.Language.LanguageDirection "rtl") "pr0 ml3" "pl0 mr3" }}">
           {{ range .Site.Menus.main }}
             <li class="list f6 f6-ns fw3 dib {{ cond (eq $.Site.Language.LanguageDirection "rtl") "pl3" "pr3" }}">
-              <a class="hover-green no-underline white-90" href="{{ .URL }}" title="{{ i18n "pageTitle" . }}">
+              <a class="green hover-white no-underline white-90" href="{{ .URL }}" title="{{ i18n "pageTitle" . }}">
                 {{ .Name }}
               </a>
             </li>
@@ -39,14 +39,14 @@
           <ul class="pl0 list">
             {{ range .Site.Menus.main }}
               <li class="pv3">
-                <a class="hover-white hover-hover-green no-underline white-90" href="{{ .URL }}">
+                <a class="hover-white green no-underline white-90" href="{{ .URL }}">
                   {{ .Name }}
                 </a>
                 {{ if .HasChildren }}
                   <ul class="pl0 mt2">
                     {{ range .Children }}
                       <li class="pv2">
-                        <a class="hover-white hover-hover-green no-underline white-80" href="{{ .URL }}">
+                        <a class="hover-white green no-underline white-80" href="{{ .URL }}">
                           {{ .Name }}
                         </a>
                       </li>
