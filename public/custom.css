@@ -16,14 +16,15 @@
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   transform-origin: center;
 }
+/* Hover-Effekt nur wenn Menu geschlossen und auf Geräten mit Maus */
+@media (hover: hover) {
+  #menu-toggle:not(.active):hover .hamburger-line-top {
+    transform: translateY(-1px);
+  }
 
-/* Hover-Effekt nur wenn Menu geschlossen */
-#menu-toggle:not(.active):hover .hamburger-line-top {
-  transform: translateY(-2px);
-}
-
-#menu-toggle:not(.active):hover .hamburger-line-bottom {
-  transform: translateY(2px);
+  #menu-toggle:not(.active):hover .hamburger-line-bottom {
+    transform: translateY(1px);
+  }
 }
 
 /* Kreuz-Animation wenn Menu offen */
