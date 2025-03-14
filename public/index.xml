@@ -2,23 +2,23 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Dein CSC in Wiesbaden on H$T</title>
-    <link>http://localhost:1313/</link>
+    <link>https://insane-csc-site.netlify.app/</link>
     <description>Recent content in Dein CSC in Wiesbaden on H$T</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://insane-csc-site.netlify.app/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>DSGVO</title>
-      <link>http://localhost:1313/dsgvo/</link>
+      <link>https://insane-csc-site.netlify.app/dsgvo/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/dsgvo/</guid>
+      <guid>https://insane-csc-site.netlify.app/dsgvo/</guid>
       <description>&lt;p&gt;Datenschutzerklärung&#xA;Allgemeine Hinweise&#xA;Die folgenden Hinweise geben einen einfachen Überblick darüber, was mit Ihren personenbezogenen Daten passiert, wenn Sie diese Website besuchen. Personenbezogene Daten sind alle Daten, mit denen Sie persönlich identifiziert werden können. Ausführliche Informationen zum Thema Datenschutz entnehmen Sie unserer unter diesem Text aufgeführten Datenschutzerklärung.&lt;/p&gt;&#xA;&lt;p&gt;Datenerfassung auf dieser Website&#xA;Wer ist verantwortlich für die Datenerfassung auf dieser Website?&#xA;Die Datenverarbeitung auf dieser Website erfolgt durch den Websitebetreiber. Dessen Kontaktdaten können Sie dem Abschnitt „Hinweis zur Verantwortlichen Stelle“ in dieser Datenschutzerklärung entnehmen.&lt;/p&gt;</description>
     </item>
     <item>
       <title>impressum</title>
-      <link>http://localhost:1313/impressum/</link>
+      <link>https://insane-csc-site.netlify.app/impressum/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/impressum/</guid>
+      <guid>https://insane-csc-site.netlify.app/impressum/</guid>
       <description>&lt;p&gt;Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.&lt;/p&gt;</description>
     </item>
   </channel>
