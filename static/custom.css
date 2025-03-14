@@ -17,7 +17,7 @@
   transform-origin: center;
 }
 
-/* Hover-Effekt wenn Menu geschlossen */
+/* Hover-Effekt nur wenn Menu geschlossen */
 #menu-toggle:not(.active):hover .hamburger-line-top {
   transform: translateY(-2px);
 }
@@ -33,15 +33,6 @@
 
 #menu-toggle.active .hamburger-line-bottom {
   transform: rotate(-45deg) translate(4px, -4px);
-}
-
-/* Rückanimation bei Hover im geöffneten Menu */
-#menu-toggle.active:hover .hamburger-line-top {
-  transform: rotate(0) translateY(-4px);
-}
-
-#menu-toggle.active:hover .hamburger-line-bottom {
-  transform: rotate(0) translateY(4px);
 }
 
 /* Bestehende Styles */
