@@ -13,7 +13,8 @@
 
 .hamburger-line-top,
 .hamburger-line-bottom {
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  
+  transition: all 0.3s cubic-bezier(0.1, 0, 0.1, 1);
   transform-origin: center;
 }
 /* Hover-Effekt nur wenn Menu geschlossen und auf Geräten mit Maus */
@@ -29,7 +30,7 @@
 
 /* Kreuz-Animation wenn Menu offen */
 #menu-toggle.active .hamburger-line-top {
-  transform: rotate(-45deg) translate(-4px, 4px);
+  transform: rotate(-45deg) translate(-2px, 2px);
 }
 
 #menu-toggle.active .hamburger-line-bottom {
