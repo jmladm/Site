@@ -30,11 +30,11 @@
 
 /* Kreuz-Animation wenn Menu offen */
 #menu-toggle.active .hamburger-line-top {
-  transform: rotate(-45deg) translate(-2px, 2px);
+  transform: rotate(-45deg) translate(-4px, 2px);
 }
 
 #menu-toggle.active .hamburger-line-bottom {
-  transform: rotate(45deg) translate(-2px, -2px);
+  transform: rotate(45deg) translate(-4px, -2px);
 }
 
 /* Bestehende Styles */
@@ -63,4 +63,9 @@
   padding: 4rem 2rem;
   max-width: 800px;
   margin: 0 auto;
+}
+@media (max-width: 767px) {
+  .hide-on-mobile {
+    display: none;
+  }
 }

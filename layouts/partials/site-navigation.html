@@ -1,32 +1,39 @@
-<nav class="pv3 ph3 ph4-ns bg-black-90" role="navigation">
+<nav class="pv3 ph3 ph4-ns bg-black" role="navigation">
   <div class="flex justify-between items-center center">
-    <div class="flex items-center">
+    <div class="flex items-center hide-on-mobile">
       {{ partial "i18nlist.html" . }}
       {{ if .Site.Menus.main }}
-        <a href="{{ .Site.Home.RelPermalink }}" class="f3 fw2 hover-white  no-underline white-90 dib {{ cond (eq $.Site.Language.LanguageDirection "rtl") "ml3" "mr4" }}">
-          {{ with .Site.Params.site_logo }}
-            <img src="{{ relURL . }}" class="w100 mw5-ns" alt="{{ $.Site.Title }}" />
-          {{ else }}
-            {{ .Site.Title }}
-          {{ end }}
-        </a>
-        <ul class="{{ cond (eq $.Site.Language.LanguageDirection "rtl") "pr0 ml3" "pl0 mr3" }}">
-          {{ range .Site.Menus.main }}
-            <li class="list f6 f6-ns fw3 dib {{ cond (eq $.Site.Language.LanguageDirection "rtl") "pl3" "pr3" }}">
-              <a class="green hover-white no-underline white-90" href="{{ .URL }}" title="{{ i18n "pageTitle" . }}">
-                {{ .Name }}
-              </a>
-            </li>
-          {{ end }}
+      
+
+      <ul class="{{ cond (eq $.Site.Language.LanguageDirection "rtl") "pr0 ml3" "pl0 mr0" }}">
+        {{ range .Site.Menus.main }}
+          <li class="list f6 f6-ns fw3 dib {{ cond (eq $.Site.Language.LanguageDirection "rtl") "pl3" "pr3" }}">
+            <a class="green hover-white no-underline white-90" href="{{ .URL }}" title="{{ i18n "pageTitle" . }}">
+              {{ .Name }}
+            </a>
+          </li>
+        {{ end }}
+       
         </ul>
       {{ end }}
     </div>
+    
+    <!-- Logo/Sitetitle -->
+    <div class="flex items-center mr6">
+    <a href="{{ .Site.Home.RelPermalink }}" class="f3 fw2 hover-white  no-underline white-90 dib {{ cond (eq $.Site.Language.LanguageDirection "rtl") "ml3" "mr4" }}">
+      {{ with .Site.Params.site_logo }}
+        <img src="{{ relURL . }}" class="w100 mw5-ns" alt="{{ $.Site.Title }}" />
+      {{ else }}
+        {{ .Site.Title }}
+      {{ end }}
+    </a>
+  </div>
 
     <!-- Hamburger Icon -->
     <button id="menu-toggle" class="ml3 flex items-center pa2 bg-transparent bn white-90  pointer z-999">
-      <svg class="w2 h2" fill="none" stroke="currentColor" stroke-width="1" viewBox="0 0 24 24">
-        <path class="hamburger-line-top" stroke-linecap="round" d="M4 8h16" />
-        <path class="hamburger-line-bottom" stroke-linecap="round" d="M4 16h16" />
+      <svg class="w2 h2" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+        <path class="hamburger-line-top green" stroke-linecap="round" d="M4 8h20" />
+        <path class="hamburger-line-bottom green" stroke-linecap="round" d="M4 16h20" />
       </svg>
     </button>
   </div>
