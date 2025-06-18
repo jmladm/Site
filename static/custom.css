@@ -31,10 +31,12 @@
 /* Kreuz-Animation wenn Menu offen */
 #menu-toggle.active .hamburger-line-top {
   transform: rotate(-45deg) translate(-4px, 2px);
+  
 }
 
 #menu-toggle.active .hamburger-line-bottom {
   transform: rotate(45deg) translate(-4px, -2px);
+  
 }
 
 /* Bestehende Styles */
