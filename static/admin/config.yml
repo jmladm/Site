@@ -2,7 +2,7 @@ backend:
   name: github
   repo: jmladm/Site
   branch: main
-  auth_scope: repo
+  
 
 
 media_folder: "static/images/uploads"
