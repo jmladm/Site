@@ -1,6 +1,9 @@
 backend:
-  name: git-gateway
+  name: github
+  repo: DEIN_GITHUB_USERNAME/DEIN_REPO_NAME
   branch: main
+  auth_scope: repo
+
 
 media_folder: "static/images/uploads"
 public_folder: "/images/uploads"
